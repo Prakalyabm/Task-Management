@@ -1,0 +1,121 @@
+/*css styles*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    margin-bottom: 10px;
+    position: reltive;
+    z-index: 0;
+}
+
+h1 {
+    color: black;
+    background-image: url('images/todoimg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 15px;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #45a040;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 60%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 10px;
+    color: #333;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: 100;
+  }
+
+    a:hover {
+    text-decoration: none;
+  }
+
+/* Responsive code */
+@media screen and (max-width: 768px) {
+    h1 {
+        padding: 15px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+    }
+}

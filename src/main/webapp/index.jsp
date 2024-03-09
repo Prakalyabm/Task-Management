@@ -36,15 +36,15 @@
             var password = document.getElementById("password").value;
             var confirm_password = document.getElementById("confirm_password").value;
 
-            // Check if passwords match
+           
             if (password !== confirm_password) {
                 alert("Passwords do not match");
                 return false;
             }
 
-            // Additional validation can be added here if needed
+            
 
-            return true; // Continue with form submission
+            return true; 
         }
     </script>
 </body>

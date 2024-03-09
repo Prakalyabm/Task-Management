@@ -14,8 +14,7 @@ public class User {
     private String email;
     private String password;
 
-//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-//    private List<Task> tasks = new ArrayList<>();
+
 
     public String getUsername() {
         return username;
@@ -43,22 +42,7 @@ public class User {
         this.password = password;
     }
 
-//    public List<Task> getTasks() {
-//        return tasks;
-//    }
-//
-//    public void setTasks(List<Task> tasks) {
-//        this.tasks = tasks;
-//    }
-//
-//    public void addTask(Task task) {
-//        tasks.add(task);
-//        task.setUser(this); // Fix the method name to setUser
-//    }
-//
-//    public void removeTask(Task task) {
-//        tasks.remove(task);
-//        task.setUser(null); // Fix the method name to setUser
+
     
     
     @Override

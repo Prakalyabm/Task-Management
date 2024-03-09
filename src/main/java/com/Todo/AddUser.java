@@ -23,8 +23,7 @@ public class AddUser extends HttpServlet {
             String password = req.getParameter("password");
             String confirm_password = req.getParameter("confirm_password");
 
-            // Validate input data (implement validation logic as needed)
-
+           
             User u = new User();
             u.setUsername(username);
             u.setEmail(email);
@@ -38,8 +37,8 @@ public class AddUser extends HttpServlet {
                 transaction.commit();
 
             } catch (Exception e) {
-                e.printStackTrace(); // Log the exception or handle it as needed
-                // Add error handling/response if necessary
+                e.printStackTrace(); 
+               
                 resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error processing signup: " + e.getMessage());
                 return;
             }
@@ -47,7 +46,7 @@ public class AddUser extends HttpServlet {
             resp.sendRedirect("todo.jsp");
 
         } catch (Exception e) {
-            e.printStackTrace(); // Log the exception or handle it as needed
+            e.printStackTrace(); 
             resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error processing signup: " + e.getMessage());
         }
     }
